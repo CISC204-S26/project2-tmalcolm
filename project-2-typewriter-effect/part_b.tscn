@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dl2fd7fna17aq"]
+
+[node name="Part B" type="Control" unique_id=454535292]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
