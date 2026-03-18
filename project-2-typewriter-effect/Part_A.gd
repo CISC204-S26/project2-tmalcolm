@@ -7,17 +7,19 @@ extends RichTextLabel
 	"How will this day get any worse?"
 ]
 var index = 0 
-var current_line = 0 
+var string = ""
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	RichTextLabel.text = dialoge[index]
+	text = dialoge[index]
 
 func next_line():
 	index += 1
 	
 	if index >= dialoge.size():
 		index = 0 #reset to beginning
-	RichTextLabel.text = dialoge[index]
+	text = dialoge[index]
 	
 
 	
@@ -26,4 +28,8 @@ func next_line():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("next"):
+		next_line()
+
+		
 	pass
