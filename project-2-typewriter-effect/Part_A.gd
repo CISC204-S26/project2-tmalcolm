@@ -1,5 +1,5 @@
 extends RichTextLabel
-@export var dialoge = [
+@export var dialogue = [
 	"Khloe: Mom, why did you call this meeting?",
 	"Mom: Girls, im holding a meeting.",
 	"Khloe: I literally just f*cking said that.",
@@ -57,7 +57,7 @@ var string = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	text = dialoge[index]
+	text = dialogue[index]
 	
 	
 
@@ -66,10 +66,10 @@ func next_line():
 	index += 1
 
 	
-	if index >= dialoge.size():
+	if index >= dialogue.size():
 		index = 0 #reset to beginning
 	
-	text = dialoge[index]
+	text = dialogue[index]
 	 
 func _input(event):
 	if event is InputEventMouseButton:
