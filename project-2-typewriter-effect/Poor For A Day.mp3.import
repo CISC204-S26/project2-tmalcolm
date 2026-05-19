@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://r3ty57ouaojm"
+path="res://.godot/imported/Poor For A Day.mp3-8812cda4c43ca97a00654d2c4f5b23be.mp3str"
+
+[deps]
+
+source_file="res://Poor For A Day.mp3"
+dest_files=["res://.godot/imported/Poor For A Day.mp3-8812cda4c43ca97a00654d2c4f5b23be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

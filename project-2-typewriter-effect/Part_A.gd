@@ -30,6 +30,9 @@ var string = ""
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	text = dialoge[index]
+	
+	text = dialoge[index]
+	$AudioStreamPlayer.play()
 
 func next_line():
 	index += 1

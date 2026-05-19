@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://882xhjltjy03"]
 
-[ext_resource type="Texture2D" uid="uid://b7ch7f2bf6hli" path="res://school background.jpg" id="1_to4tk"]
 [ext_resource type="Script" uid="uid://dxglvotpo1xhy" path="res://Part_A.gd" id="2_0jsbj"]
 
 [node name="Part A" type="Control" unique_id=2005674799]
@@ -10,12 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="SchoolBackground" type="Sprite2D" parent="." unique_id=39145704]
-modulate = Color(0.7581918, 0.7581918, 0.7581917, 1)
-position = Vector2(575, 330)
-scale = Vector2(0.85119045, 0.890625)
-texture = ExtResource("1_to4tk")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=866289547]
 layout_mode = 0
