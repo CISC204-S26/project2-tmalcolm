@@ -2,17 +2,9 @@
 
 [ext_resource type="AudioStream" uid="uid://r3ty57ouaojm" path="res://Poor For A Day.mp3" id="2_0e48y"]
 [ext_resource type="Script" uid="uid://dxglvotpo1xhy" path="res://Part_A.gd" id="2_epypp"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_epypp"]
-load_path = "res://.godot/imported/school background.jpg-0de60ab21183242aff4b4942c02584f1.ctex"
+[ext_resource type="Texture2D" uid="uid://xhci2pt5qa2b" path="res://living room background.webp" id="3_epypp"]
 
 [node name="Node2D" type="Node2D" unique_id=1794527594]
-
-[node name="SchoolBackground" type="Sprite2D" parent="." unique_id=68424802]
-modulate = Color(0.7581918, 0.7581918, 0.7581917, 1)
-position = Vector2(575, 330)
-scale = Vector2(0.85119045, 0.890625)
-texture = SubResource("CompressedTexture2D_epypp")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=257309904]
 offset_left = 4.0
@@ -24,3 +16,8 @@ script = ExtResource("2_epypp")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1837134700]
 stream = ExtResource("2_0e48y")
+
+[node name="LivingRoomBackground" type="Sprite2D" parent="." unique_id=1184674189]
+position = Vector2(582, 322)
+scale = Vector2(0.9608333, 1.0346216)
+texture = ExtResource("3_epypp")

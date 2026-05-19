@@ -31,11 +31,14 @@ var string = ""
 func _ready() -> void:
 	text = dialoge[index]
 	
+	
 	text = dialoge[index]
-	$AudioStreamPlayer.play()
+	$"../AudioStreamPlayer".play()
+
 
 func next_line():
 	index += 1
+
 	
 	if index >= dialoge.size():
 		index = 0 #reset to beginning
