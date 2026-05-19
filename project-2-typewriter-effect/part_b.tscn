@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://dl2fd7fna17aq"]
 
-[node name="Node2D" type="Control" unique_id=156148520]
-layout_mode = 3
-anchors_preset = 0
+[ext_resource type="Script" uid="uid://cvr62yaqk78tc" path="res://part 2 script.gd" id="1_gn0ur"]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1031683324]
-layout_mode = 0
-offset_left = -5.0
-offset_top = 437.0
-offset_right = 1143.0
-offset_bottom = 652.0
+[node name="Part B" type="Node2D" unique_id=1055812785]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=847698395]
+offset_left = -2.0
+offset_top = 464.0
+offset_right = 1158.0
+offset_bottom = 654.0
+theme_override_font_sizes/normal_font_size = 47
+script = ExtResource("1_gn0ur")
