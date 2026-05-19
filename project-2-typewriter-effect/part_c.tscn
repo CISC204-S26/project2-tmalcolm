@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://cyndds3gq50kl"]
 
+[ext_resource type="Script" uid="uid://d37u27a4i67ij" path="res://part 3 script.gd" id="1_e15qq"]
+[ext_resource type="AudioStream" uid="uid://r3ty57ouaojm" path="res://Poor For A Day.mp3" id="2_3seef"]
+
 [node name="Part C" type="Control" unique_id=2015500549]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +10,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1360847172]
+layout_mode = 0
+offset_top = 480.0
+offset_right = 1156.0
+offset_bottom = 648.0
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 36
+bbcode_enabled = true
+script = ExtResource("1_e15qq")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="RichTextLabel" unique_id=1496518346]
+position = Vector2(0, -480)
+stream = ExtResource("2_3seef")

@@ -10,4 +10,5 @@ offset_top = 464.0
 offset_right = 1158.0
 offset_bottom = 654.0
 theme_override_font_sizes/normal_font_size = 47
+bbcode_enabled = true
 script = ExtResource("1_gn0ur")
