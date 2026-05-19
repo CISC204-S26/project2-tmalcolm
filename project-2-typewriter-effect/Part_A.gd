@@ -32,8 +32,6 @@ func _ready() -> void:
 	text = dialoge[index]
 	
 	
-	text = dialoge[index]
-	$"../AudioStreamPlayer".play()
 
 
 func next_line():
@@ -42,8 +40,17 @@ func next_line():
 	
 	if index >= dialoge.size():
 		index = 0 #reset to beginning
-	text = dialoge[index]
 	
+	text = dialoge[index]
+	 
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			next_line()
+
+	if event is InputEventKey:
+		if event.pressed and event.keycode == KEY_SPACE:
+			next_line()
 
 	
 	pass # Replace with function body.
@@ -51,8 +58,7 @@ func next_line():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("next"):
-		next_line()
+	
 
 		
 	pass
