@@ -55,6 +55,8 @@ var index = 0
 
 func _ready() -> void:
 	show_dialogue()
+	
+	
 
 func next_line():
 	index += 1
