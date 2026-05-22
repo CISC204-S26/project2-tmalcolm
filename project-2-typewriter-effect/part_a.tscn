@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://882xhjltjy03"]
 
 [ext_resource type="Script" uid="uid://dxglvotpo1xhy" path="res://Part_A.gd" id="2_0jsbj"]
+[ext_resource type="Texture2D" uid="uid://xhci2pt5qa2b" path="res://living room background.webp" id="2_to4tk"]
 
 [node name="Part A" type="Control" unique_id=2005674799]
 layout_mode = 3
@@ -9,6 +10,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="LivingRoomBackground" type="Sprite2D" parent="." unique_id=2055942282]
+position = Vector2(576, 326.25)
+scale = Vector2(0.96, 1.0426731)
+texture = ExtResource("2_to4tk")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=866289547]
 layout_mode = 0

@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://dl2fd7fna17aq"]
 
 [ext_resource type="Script" uid="uid://cvr62yaqk78tc" path="res://part 2 script.gd" id="1_gn0ur"]
+[ext_resource type="Texture2D" uid="uid://xhci2pt5qa2b" path="res://living room background.webp" id="2_u6u1k"]
 
 [node name="Part B" type="Node2D" unique_id=1055812785]
+
+[node name="LivingRoomBackground" type="Sprite2D" parent="." unique_id=857567276]
+position = Vector2(578.5, 324.75)
+scale = Vector2(0.9625, 1.0410628)
+texture = ExtResource("2_u6u1k")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=847698395]
 offset_left = -2.0

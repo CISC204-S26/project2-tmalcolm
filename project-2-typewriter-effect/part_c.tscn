@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d37u27a4i67ij" path="res://part 3 script.gd" id="1_e15qq"]
 [ext_resource type="AudioStream" uid="uid://r3ty57ouaojm" path="res://Poor For A Day.mp3" id="2_3seef"]
+[ext_resource type="Texture2D" uid="uid://xhci2pt5qa2b" path="res://living room background.webp" id="3_tlj50"]
 
 [node name="Part C" type="Control" unique_id=2015500549]
 layout_mode = 3
@@ -10,6 +11,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="LivingRoomBackground" type="Sprite2D" parent="." unique_id=521490510]
+position = Vector2(576.5, 327.75)
+scale = Vector2(0.9558333, 1.0539453)
+texture = ExtResource("3_tlj50")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1360847172]
 layout_mode = 0
