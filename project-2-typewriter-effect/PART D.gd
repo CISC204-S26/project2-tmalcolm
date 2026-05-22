@@ -53,31 +53,97 @@ extends RichTextLabel
 ]
 
 var current_index = 0
-var images = []
 
-@onready var happy = $"Happy Face"
-@onready var confused = $"Confused face"
-@onready var mad = $"Mad Face"
+@onready var music = "../music"
+
+# KHLOE
+@onready var khloe_normal = $"Happy Face P"
+@onready var khloe_confused = $"Confused face P"
+@onready var khloe_mad = $"Mad Face P"
+
+# KIM
+@onready var kim_normal = $"Normal Face H"
+@onready var kim_confused = $"Confused Face H"
+@onready var kim_mad = $"Mad Face H"
+
+# MOM
+@onready var mom_normal = $"Normal Face J"
+@onready var mom_confused = $"Confused Face J"
+@onready var mom_mad = $"Mad Face J"
+
+# KOURTNEY
+@onready var kourtney_normal = $"Normal Face TT"
+@onready var kourtney_confused = $"Confused face TT"
+@onready var kourtney_mad = $"Mad Face TT"
+
 
 func _ready():
 	bbcode_enabled = true
-
-	images = [
-		confused, happy, mad, mad, happy, mad, confused, confused,
-		confused, mad, confused, confused, mad, confused, confused, mad,
-		confused, mad, mad, mad, confused, confused, confused, confused,
-		mad, confused, confused, mad, confused, confused, confused, confused,
-		confused, confused, confused, confused, confused, confused, mad, mad,
-		confused, mad, mad, confused, confused, happy, happy, confused
-	]
-
 	show_dialogue()
 
-func show_dialogue():
-	for img in [happy, confused, mad]:
-		img.visible = false
+func reset_faces():
+	# Hide all expressions
+	khloe_normal.visible = false
+	khloe_confused.visible = false
+	khloe_mad.visible = false
 
-	images[current_index].visible = true
+	kim_normal.visible = false
+	kim_confused.visible = false
+	kim_mad.visible = false
+
+	kourtney_normal.visible = false
+	kourtney_confused.visible = false
+	kourtney_mad.visible = false
+
+	mom_normal.visible = false
+	mom_confused.visible = false
+	mom_mad.visible = false
+
+	# Show default normals
+	khloe_normal.visible = true
+	kim_normal.visible = true
+	kourtney_normal.visible = true
+	mom_normal.visible = true
+	
+	bbcode_enabled = true
+	
+
+func set_expression():
+	reset_faces()
+
+	var line = dialogue[current_index]
+
+	if "Khloe:" in line:
+		if "f*cking" in line or "shut up" in line:
+			khloe_mad.visible = true
+			khloe_normal.visible = false
+		elif "What?" in line or "snapchat" in line:
+			khloe_confused.visible = true
+			khloe_normal.visible = false
+
+	if "Kim:" in line:
+		if "NO!" in line:
+			kim_mad.visible = true
+			kim_normal.visible = false
+		else:
+			kim_confused.visible = true
+			kim_normal.visible = false
+
+	if "Kourtney:" in line:
+		if "How?" in line:
+			kourtney_confused.visible = true
+			kourtney_normal.visible = false
+
+	if "Mom:" in line:
+		if "change" in line or "POOR" in line or "This is my point" in line:
+			mom_mad.visible = true
+			mom_normal.visible = false
+		else:
+			mom_confused.visible = true
+			mom_normal.visible = false
+
+func show_dialogue():
+	set_expression()
 
 	var full_text = dialogue[current_index]
 	var partial_text = ""
@@ -104,8 +170,13 @@ func _input(event):
 		current_index += 1
 	else:
 		return
+		
+		
 
 	if current_index >= dialogue.size():
+		music.stop()
 		current_index = 0
 
 	show_dialogue()
+	
+	

@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bkdonvmdsgue1" path="res://Poppy 3.png" id="12_6cgrx"]
 [ext_resource type="Texture2D" uid="uid://d2vm1wfjiku4q" path="res://Poppy 3 mad.png" id="13_7jbug"]
 [ext_resource type="Texture2D" uid="uid://6tbq05wg0bs4" path="res://Poppy 3 confused.png" id="14_ufusg"]
+[ext_resource type="AudioStream" uid="uid://r3ty57ouaojm" path="res://Poor For A Day.mp3" id="15_fl3oa"]
 
 [node name="Part D" type="Control" unique_id=834133858]
 layout_mode = 3
@@ -22,6 +23,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=2042545560]
+stream = ExtResource("15_fl3oa")
+autoplay = true
 
 [node name="LivingRoomBackground" type="Sprite2D" parent="." unique_id=1063432281]
 position = Vector2(577, 324)
@@ -34,6 +39,9 @@ offset_left = 3.0
 offset_top = 81.0
 offset_right = 1148.0
 offset_bottom = 649.0
+theme_override_font_sizes/normal_font_size = 42
+theme_override_font_sizes/bold_font_size = 42
+theme_override_font_sizes/bold_italics_font_size = 42
 script = ExtResource("1_yyo2k")
 
 [node name="Confused Face H" type="Sprite2D" parent="RichTextLabel" unique_id=627524147]
@@ -70,28 +78,34 @@ texture = ExtResource("5_cr0ea")
 position = Vector2(937.5, 380.00003)
 scale = Vector2(0.17724612, 0.17968751)
 texture = ExtResource("9_r6frs")
+flip_h = true
 
 [node name="Mad Face J" type="Sprite2D" parent="RichTextLabel" unique_id=884388430]
 position = Vector2(943, 381.00003)
 scale = Vector2(0.19116208, 0.18261717)
 texture = ExtResource("10_fl3oa")
+flip_h = true
 
 [node name="Confused Face J" type="Sprite2D" parent="RichTextLabel" unique_id=1141204967]
 position = Vector2(945, 379.75)
 scale = Vector2(0.19042975, 0.185791)
 texture = ExtResource("11_r2ten")
+flip_h = true
 
 [node name="Normal Face TT" type="Sprite2D" parent="RichTextLabel" unique_id=558137210]
-position = Vector2(609, 373)
-scale = Vector2(0.18896486, 0.1867676)
+position = Vector2(614.74994, 375.875)
+scale = Vector2(0.19458005, 0.18957521)
 texture = ExtResource("12_6cgrx")
+metadata/_edit_lock_ = true
 
 [node name="Mad Face TT" type="Sprite2D" parent="RichTextLabel" unique_id=532945571]
-position = Vector2(610.00006, 374.62497)
+position = Vector2(615, 378)
 scale = Vector2(0.1826172, 0.19006348)
 texture = ExtResource("13_7jbug")
+metadata/_edit_lock_ = true
 
 [node name="Confused face TT" type="Sprite2D" parent="RichTextLabel" unique_id=1018652664]
-position = Vector2(611.00006, 375)
+position = Vector2(616, 377.00003)
 scale = Vector2(0.18212897, 0.19140618)
 texture = ExtResource("14_ufusg")
+metadata/_edit_lock_ = true
