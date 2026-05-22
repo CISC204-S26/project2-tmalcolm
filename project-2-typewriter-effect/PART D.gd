@@ -25,7 +25,7 @@ extends RichTextLabel
 	"[b]Khloe:[/b] Oh my god, fine.",
 	"[b]Khloe:[/b] What's her snapchat name?",
 	"[b]Mom:[/b] What?",
-	"[b]Khloe:[/b] What's her snapchat?",
+	"[b]Khloe:[/b] Humanity,What's her snapchat?",
 	"[b]Khloe:[/b] We'll give her a snap so you can shut up.",
 	"[b]Kourtney:[/b] Oh my god, what do you want us to do?",
 	"[b]Mom:[/b] In order to keep you grounded...",
@@ -47,7 +47,7 @@ extends RichTextLabel
 	"[b]Mom:[/b] You girls will each be living in a small apartment.",
 	"[b]Mom:[/b] With no credit cards, little money, and just enough food.",
 	"[b]Khloe:[/b] Oh my god what?",
-	"[b]Kim:[/b] Why did you do that?",
+	"[b]Kim:[/b] Why did you do this?",
 	"[b]Kourtney:[/b] No Mommy, I love you please :(",
 	"[b]Mom:[/b] It's for your own good."
 ]
